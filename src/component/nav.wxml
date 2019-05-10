@@ -1,0 +1,8 @@
+<view>
+    <view class='nav bg-gray' style='height:{{navH*2}}rpx'>
+        <view class="iconfont icon-fanhui back" mode='aspectFit' bindtap='navBack'></view>
+        <view class='nav-title'>
+            信息系统互动设计【10754】
+        </view>
+    </view>
+</view>

@@ -15,7 +15,16 @@ App({
 
         // init Socket.io
         initSocket()
-    },
+        let phoneinfo = wx.getSystemInfoSync()
+        console.log(phoneinfo)
+  /*      if (phoneinfo.system.indexOf('iOS') !== -1) {
+            this.globalData.navHeight = phoneinfo.statusBarHeight + 44
+        } else {
+            this.globalData.navHeight = phoneinfo.statusBarHeight + 48
+        }
+ */
+  this.globalData.navHeight=phoneinfo.statusBarHeight+48
+   },
 
     // 初始化sentry
     initSentry() {
@@ -34,6 +43,7 @@ App({
         oauthSession: {},   // 资源服务器session
         syllabusSession: {}, // 课程表业务后台session
         socket_id: null,    // socket id
+        navHeight: 0
     },
 
     onError(msg) {

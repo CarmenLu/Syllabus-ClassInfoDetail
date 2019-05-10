@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/test/test"
+    "pages/ClassInfo/ClassInfo"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationStyle":"custom"
   },
   "networkTimeout": {
     "request": 5000,
