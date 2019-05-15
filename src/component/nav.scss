@@ -1,0 +1,35 @@
+$bgColor:#D8D8D8;
+$fontColor:#000000;
+.nav{
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.nav-title{
+  width: 100%;
+  font-family: PingFang-SC-Medium;
+  font-size: 36rpx;
+  color: $fontColor;
+  margin-left:17rpx;
+  padding-bottom:20rpx;
+}
+.nav .back{
+  margin-left:40rpx;
+  margin-top:14rpx;
+  font-size:50rpx;
+  padding-bottom:24rpx;
+}
+.bg-gray{
+  background-color: $bgColor;
+}
+.overflow{
+  overflow: auto;
+}
+.hidden{
+  overflow: hidden;
+}

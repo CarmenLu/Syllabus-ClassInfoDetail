@@ -8,7 +8,8 @@ Page({
     data: {
         focus: false,
         inputValue: '',
-        navH: 0
+        navH: 0,
+        naH:0
     },
     bindButtonTap: function () {
         this.setData({
@@ -21,7 +22,8 @@ Page({
      */
     onLoad: function (options) {
         this.setData({
-            navH: App.globalData.navHeight * 2
+            navH: App.globalData.navHeight,
+            naH: App.globalData.Height
         })
         console.log(this.data)
     },

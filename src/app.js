@@ -17,16 +17,15 @@ App({
         initSocket()
         let phoneinfo = wx.getSystemInfoSync()
         console.log(phoneinfo)
-  /*      if (phoneinfo.system.indexOf('iOS') !== -1) {
-            this.globalData.navHeight = phoneinfo.statusBarHeight + 44
+        if (phoneinfo.system.indexOf('iOS') !== -1) {
+            this.globalData.Height = 48 // 安卓标题栏高度
         } else {
-            this.globalData.navHeight = phoneinfo.statusBarHeight + 48
+            this.globalData.Height = 44 // iOS标题栏高度
         }
- */
-  this.globalData.navHeight=phoneinfo.statusBarHeight+48
-   },
+        this.globalData.navHeight = phoneinfo.statusBarHeight // 手机状态栏高度
+    },
 
-    // 初始化sentry
+// 初始化sentry
     initSentry() {
         switch (true) {
             case config.environment !== constant.production:
@@ -43,7 +42,8 @@ App({
         oauthSession: {},   // 资源服务器session
         syllabusSession: {}, // 课程表业务后台session
         socket_id: null,    // socket id
-        navHeight: 0
+        navHeight: 0,
+        Height: 0
     },
 
     onError(msg) {

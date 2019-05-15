@@ -1,0 +1,154 @@
+/* src/pages/ClassInfo/ClassInfo.wxss */
+$thickLine-color:#DBDBDB;
+$thinLine-color:#EFEFEF;
+$main-font:PingFangSC-Regular, sans-serif;
+$fontColor:#000000;
+.page {
+  margin-top: 36rpx;
+  margin-left: 42rpx;
+  margin-right: 50rpx;
+  padding: auto;
+}
+
+.line1 {
+  border: 2rpx solid $thickLine-color;
+  margin: 10rpx 0rpx;
+}
+
+.line2 {
+  border: 2rpx solid $thinLine-color;
+  margin: 16rpx 0rpx;
+}
+
+.classKey text {
+  font-family: $main-font;
+  font-size: 32rpx;
+  color: $fontColor;
+}
+
+.classDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.classValue text {
+  font-family: $main-font;
+  font-size: 24rpx;
+  color: $fontColor;
+}
+
+.TeacherData {
+  margin-top: 74rpx;
+}
+
+.backgroundCircle {
+  width: 134rpx;
+  height: 134rpx;
+  border-radius: 50%;
+  background-color: #BBBBBB;
+
+}
+
+.TeacherAvatar {
+  margin-top: 36rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+#avatar {
+  margin-left: 36rpx;
+  padding-top: 20rpx;
+  font-size:60rpx;
+}
+
+.TeacherInfo {
+  margin-left: 38rpx;
+}
+
+.TeacherName {
+  font-family: PingFang-SC-Medium, sans-serif;
+  font-size: 36rpx;
+  color: $fontColor;
+  margin-bottom: 18rpx;
+  padding-top: 16rpx;
+}
+
+.TeacherEmail {
+  font-family: PingFang-SC-Medium;
+  font-size: 24rpx;
+  color: $fontColor;
+}
+
+.TeacherIntro {
+  font-family: PingFang-SC-Medium;
+  font-size: 28rpx;
+  color: $fontColor;
+  padding-top: 36rpx;
+  height: 120rpx;
+}
+
+.classmateAvatar {
+  background: $thickLine-color;
+  border-radius: 12rpx;
+  width: 88rpx;
+  height: 92rpx;
+}
+#avatar1{
+  padding-top:10rpx;
+  padding-left:20rpx;
+  font-size:46rpx;
+  color: #9b9b9b;
+}
+.classmateInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom:14rpx;
+
+}
+.classmateName{
+  font-family: PingFang-SC-Medium, sans-serif;
+  font-size: 32rpx;
+  color: $fontColor;
+  margin-left:16rpx;
+}
+.otherDetail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width:506rpx;
+  margin-left:16rpx;
+}
+.major{
+  margin-top:16rpx;
+  font-family: PingFang-SC-Medium, sans-serif;
+  font-size: 20rpx;
+  color: #000000;
+}
+.dorm{
+  font-family: PingFang-SC-Medium, fantasy;
+  font-size: 24rpx;
+  color: $fontColor;
+  float:right;
+}
+.line3{
+  border: 2rpx solid $thinLine-color;
+  margin-top:12rpx;
+}
+.input1{
+  display: flex;
+  flex-flow: row;
+  width:624rpx;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.placeholderStyle{
+  font-family: PingFang-SC-Light;
+  font-size: 20rpx;
+  color: #9B9B9B;
+}
+.searchBar{
+  margin-bottom: 15rpx;
+}

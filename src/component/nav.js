@@ -26,7 +26,8 @@ Component({
     lifetimes: {
         attached: function () {
             this.setData({
-                navH: App.globalData.navHeight
+                navH: App.globalData.navHeight,
+                naH: App.globalData.Height
             })
         }
     },
